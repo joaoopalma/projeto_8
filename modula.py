@@ -85,5 +85,5 @@ sd.play(demodulado, samplerate)
 sd.wait()
 
 filename = 'modulado.wav'
-sf.write(filename, audio, sd.default.samplerate)
+sf.write(filename, demodulado, sd.default.samplerate)
 print(f"Áudio salvo em {filename}.")
