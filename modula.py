@@ -76,10 +76,10 @@ for t in range(len(Y)):
     portadora = C * math.sin(math.pi * 2 * frequencia * t/samplerate + phase)
     demodulado.append(Y[t] * portadora)
 
-signal.plotFFT(demodulado, samplerate, "Sinal Demodulado")
+signal.plotFFT(demodulado, samplerate, "Sinal Modulado")
 plt.show()
 
-print("tocando audio demodulado")
+print("tocando audio modulado")
 demodulado = normaliza(demodulado)
 sd.play(demodulado, samplerate)
 sd.wait()
